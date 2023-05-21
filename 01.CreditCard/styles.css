@@ -18,12 +18,20 @@ body {
 
 .container {
     position: relative;
+    background-image: url(images/bg.png);
+    background-size: cover;
     background-color: #fff;
     padding: 25px;
     border-radius: 28px;
     max-width: 380px;
     width: 100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo img {

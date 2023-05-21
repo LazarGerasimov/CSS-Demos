@@ -45,6 +45,10 @@ h5 {
     color: white;
 }
 
+h6 {
+    color: white;
+}
+
 header .chip {
     width: 60px;
 }

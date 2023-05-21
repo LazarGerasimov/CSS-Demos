@@ -8,6 +8,16 @@
     font-family: "Poppins", sans-serif;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FC;
+}
+
+
+
 .logo img {
     width: 48px;
 }

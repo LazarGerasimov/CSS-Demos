@@ -82,3 +82,13 @@ h5 {
     width: 50px;
 }
 
+.valid-date {
+    font-size: 16px;
+}
+
+.front-face .card-details {
+    display: flex;
+    margin-top: 102px;
+    align-items: baseline;
+    justify-content: space-between;
+}

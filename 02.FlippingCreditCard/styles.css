@@ -17,6 +17,7 @@ section {
     align-items: center;
     justify-content: center;
     color: #fff;
+    perspective: 1000px;
 }
 
 section::before {
@@ -44,9 +45,16 @@ section::after {
     height: 245px;
     width: 375px;
     z-index: 10;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.container:hover {
+    transform: rotateY(180deg);
 }
 
 .container .card {
+    position: absolute; 
     height: 100%;
     width: 100%;
     padding: 25px;
@@ -56,6 +64,7 @@ section::after {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
     z-index: 5;
+    backface-visibility: hidden;
 }
 
 .front-face .logo img {
@@ -76,6 +85,7 @@ section::after {
 h5 {
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 1.5px;
 }
 
 .front-face .chip {
@@ -91,4 +101,55 @@ h5 {
     margin-top: 102px;
     align-items: baseline;
     justify-content: space-between;
+}
+
+/* Backside  */
+
+.card.back-face {
+    border: none;
+    padding: 15px 25px 25px 25px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card.back-face h6{
+    font-size: 8px;
+}
+
+.card.back-face .magnetic-strip {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 45px;
+    width: 100%;
+    background: #000;
+}
+
+.card.back-face .signature {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 74px;
+    height: 36px;
+    width: 80%;
+    border-radius: 6px;
+    background-color: #fff;
+    background: repeating-linear-gradient(#fff, #fff, 3px, #efefef 0px, #efefef 9px);
+}
+
+.card.back-face h5 {
+    font-size: 7px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: black;
+}
+
+.signature i {
+    color: #000;
+    /* font-size: 12px;
+    padding: 4px 6px;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-right: -30px; */
+
 }

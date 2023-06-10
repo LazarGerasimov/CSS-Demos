@@ -2,16 +2,33 @@
 
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
     position: relative;
     height: 150px;
     width: 150px;
+    border-radius: 50%;
+    background-color: #ACB0B4;
+
+    padding: 3px;
 }
 
 .image .profile-img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
 }

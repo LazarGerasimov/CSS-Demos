@@ -67,7 +67,7 @@ body {
 .profile-card .media-buttons {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .media-buttons .link {
@@ -85,7 +85,8 @@ body {
 
 .buttons {
     display: flex;
-    align-items: center;   
+    align-items: center;
+    margin-bottom: 25px;   
 }
 
 .button {
@@ -103,4 +104,25 @@ body {
 
 .button:hover {
     transform: scale(1.07);
+}
+
+.analytics {
+    display: flex;
+    align-items: center;
+}
+
+.analytics .data {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+
+.analytics .data i {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.analytics .data:last-child {
+    border-right: none;
 }

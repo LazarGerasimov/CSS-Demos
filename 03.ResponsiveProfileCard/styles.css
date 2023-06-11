@@ -81,6 +81,11 @@ body {
     border-radius: 50%;
     background-color: #ced4da;
     color: white;
+    transition: all 0.3s ease-in;
+}
+
+.media-buttons .link:hover {
+    transform: scale(1.07);
 }
 
 .buttons {

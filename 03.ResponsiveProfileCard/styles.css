@@ -67,6 +67,7 @@ body {
 .profile-card .media-buttons {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .media-buttons .link {
@@ -82,3 +83,24 @@ body {
     color: white;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;   
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 10px;
+    padding: 8px 24px;
+    background-color: #ACB0B4;
+    border-radius: 24px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.button:hover {
+    transform: scale(1.07);
+}

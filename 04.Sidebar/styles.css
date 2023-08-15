@@ -52,8 +52,13 @@
     padding: 15px 30px;
 }
 
+.sidebar-menu .ul-links li:hover {
+    transform: scale(1.1);
+}
+
 .sidebar-menu .ul-links li a:hover {
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
 }
 
 .ul-links {

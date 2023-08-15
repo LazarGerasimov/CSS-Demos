@@ -64,7 +64,11 @@
 }
 
 .social-media {
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 60px;
+    font-size: 25px;
 }
 
 .social-media a{

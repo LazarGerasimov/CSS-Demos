@@ -64,6 +64,7 @@ body {
     color: #48BFE3;
     background-color: #fff;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 #check:checked ~ .search-box .icon {

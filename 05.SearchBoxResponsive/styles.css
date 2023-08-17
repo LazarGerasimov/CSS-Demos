@@ -16,3 +16,24 @@ body {
     width: 100%;
     background: #8D31D8;
 }
+
+.box {
+    max-width: 400px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-box input {
+    border-radius: 20px;
+    padding: 8px 18px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+.icon {
+    font-size: 18px;
+}
